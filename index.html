@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Scale Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Music Scale Generator</h1>
+
+    <div class="selections">
+        <h3>Scale Types</h3>
+        <div class="scale-types">
+            <label><input type="checkbox" id="major" checked> Major</label>
+            <label><input type="checkbox" id="minor" checked> Minor</label>
+            <label><input type="checkbox" id="pentatonicMajor" checked> Major Pentatonic</label>
+            <label><input type="checkbox" id="pentatonicMinor" checked> Minor Pentatonic</label>
+            <label><input type="checkbox" id="blues" checked> Blues</label>
+            <label><input type="checkbox" id="diminished" checked> Diminished</label>
+        </div>
+    </div>
+
+    <button id="generateBtn">Generate Random Scale</button>
+
+    <div id="keyDisplay" class="key-display">
+    </div>
+
+</div>
+
+<div class="fretboard-container">
+    <h3>Scale on Guitar</h3>
+    <canvas id="fretboardCanvas" width="700" height="200"></canvas>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
